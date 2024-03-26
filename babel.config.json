@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ]
+}
+
+
+// @babel/preset-env must be set to target esmodules in order to use the latest 
+// Node modules. Also, defining the JSX runtime to automatic is needed, since React 
+// 18 has adopted the new JSX Transform functionality
