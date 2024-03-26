@@ -32,3 +32,13 @@ determine which plugins will be used to compile our JavaScript code into a reada
 format for the browser (@babel/preset-env) and to compile React-specific code 
 (@babel/preset-react). 
 
+
+# The final step in rendering our React component 
+is extending Webpack so 
+that it adds the minified bundle code to the body tags as scripts when running. 
+Therefore, we should install the html-webpack-plugin package into 
+our devDependencies
+
+
+
+
