@@ -47,5 +47,10 @@ we will install another package called webpack-dev-server. This package adds the
 option to force Webpack to restart every time we make changes to our project files and 
 manages our application files in memory instead of by building the dist directory. 
 
+# Retrieving data
 
+Information from APIs can be retrieved in JavaScript using, for example, the fetch
+method, which is already supported by our browser. This data will be retrieved in the 
+top-level components only, meaning that we should add a fetch function in the List
+container to retrieve and store that information.
 
