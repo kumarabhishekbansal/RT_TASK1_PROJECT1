@@ -54,3 +54,9 @@ method, which is already supported by our browser. This data will be retrieved i
 top-level components only, meaning that we should add a fetch function in the List
 container to retrieve and store that information.
 
+# Adding ESLint
+npm install --save-dev eslint eslint-webpack-plugin eslint-plugin-react
+
+The first package, called eslint, is the core package and helps us identify any potentially 
+problematic patterns in our JavaScript code. eslint-webpack-plugin is a package 
+that is used by Webpack to run ESLint every time we update our code. Finally, eslintplugin-react adds specific rules to ESLint for React applications.

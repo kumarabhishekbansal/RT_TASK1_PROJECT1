@@ -17,20 +17,22 @@ function List() {
     <>
       <div>
         <h2>Characters</h2>
-        {loading ? (
-          <div>Loading.........</div>
-        ) : (
-          <div>
-            {characters.map((character) => (
-              <Character
-                key={characters.id}
-                name={character.name}
-                origin={character.origin}
-                image={character.image}
-              />
-            ))}
-          </div>
-        )}
+        <div className="row">
+          {loading ? (
+            <div>Loading.........</div>
+          ) : (
+            <div className="row">
+              {characters.map((character) => (
+                <Character
+                  key={characters.id}
+                  name={character.name}
+                  origin={character.origin}
+                  image={character.image}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
