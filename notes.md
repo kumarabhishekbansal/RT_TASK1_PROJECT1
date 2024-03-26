@@ -40,5 +40,12 @@ Therefore, we should install the html-webpack-plugin package into
 our devDependencies
 
 
+# Creating a development server
+While working in development mode, every time we make changes to the files in 
+our application, we need to rerun the npm start command. Since this is a bit tedious, 
+we will install another package called webpack-dev-server. This package adds the 
+option to force Webpack to restart every time we make changes to our project files and 
+manages our application files in memory instead of by building the dist directory. 
+
 
 
